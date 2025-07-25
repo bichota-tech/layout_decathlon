@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Segoe UI","Roboto",Helvetica,Arial,sans-serif;
+    background-color: #ffffff;
+    padding-inline: 1rem;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; 
+    padding-top: .6rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+nav img{
+    width: 13dvh;
+    margin-top: .2rem;
+    margin-right: 7rem;
+}
+
+/*-+-+-+--+---+-+-+-+-+-+-+--+*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side_picture {
+    display: none;
+}
+
+.backlink{
+    display: none;
+}
+
+@media (min-width:600){
+    .backlink{
+        
+    }
+}
+
+.login_title{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    align-self: stretch;
+    line-height: 120%;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    margin-block: 2rem;
+}
+
+input[type="email"]{
+    width: 100%;
+    padding: .8rem;
+    border: 1px solid rgba(0, 0, 0, 0.445);
+    margin-top: .5rem;
+    font-size: medium;
+    color: black;
+}
+
+.login button{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: .9rem;
+    background-color: #354bc4;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer; 
+}
+
+.login button:hover{
+    background-color: #2b3a9c;
+}
+
+.login_social button img{
+    width: 1.89rem;
+    padding: .4rem;
+}
+
+.login_social button{
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    padding: .45rem .45rem;
+    margin-right: .5rem;
+    margin-top: .85rem;
+}
+
+.login_social button:hover{
+    background-color: rgba(0, 0, 0, 0.11);
+}
+
+.sesion p{
+    margin-top: 1.7rem;
+    margin-bottom: .7rem;
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+.sesion a{
+    color: rgba(0, 0, 0, 0.658);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.397);
+    
+}
+
+.marketing_benefits{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgba(0, 0, 0, 0.774);
+    width: 100%;
+    
+}
+
+.marketing_benefits h3{
+    font-size: .97rem;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+    width: 100%;
+}
+
+.icon_list img{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+}
+
+
+.marketing_list ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: left;
+    list-style: none;
+    
+}
+
+.marketing_list li{
+    margin-bottom: .75rem;
+}
+
+.login_footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin-top: 4.5rem;
+    list-style: none;
+}
+
+.login_footer li a{
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+.language img{
+    width: 2.2rem;
+    margin-right: 1rem;
+}
+.language i{
+    font-weight: bolder;
+}
+.language {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 1.3rem;
+}
+
+.footer{
+    margin-top: .8rem;
+    font-size: smaller;
+    color: rgba(0, 0, 0, 0.473);
+    text-align: left;
+}
+
+.footer a{
+    color: rgba(0, 0, 0, 0.658);
+    text-decoration: underline;
+}
+
+
+
