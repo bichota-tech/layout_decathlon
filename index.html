@@ -14,9 +14,10 @@
 <body>
 
     <header>
-        <nav>
+        <div class="nav">
             <div class="goback">
-                <a href="https://www.decathlon.es/es">
+                <a href="https://www.decathlon.es/es" target="_blank"
+                                    rel="noopener noreferrer">
                     <i class="ri-home-2-line"></i></a>
                 <a class="backlink" href="https://www.decathlon.es/es">Volver atrás</a>
             </div>
@@ -24,32 +25,39 @@
             <div class="logo">
                 <img src="https://login.decathlon.net/assets/decathlon-logo-vp-DDH3S1xy.svg" alt="decathlon-logo">
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
         <section class="principal">
-            <img class="side_picture" src="imagenes/side_picture-login.webp" alt="Imagen lateral de login">
+            <div class="image_side">
+                <img class="side_picture" src="imagenes/side_picture-login.webp" alt="Imagen lateral de login">
+            </div>
             <div class="login_form">
                 <div class="login_title">
-                    <h3>Conéctate<h3>
+                    <h3 class="title">Conéctate<h3>
+                            <form class="login" netlify>
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" required placeholder="Introduce un correo electrónico" />
+                                <button type="submit">CONTINUAR</button>
+                            </form>
                 </div>
-                <form class="login">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" required placeholder="Introduce un correo electrónico" />
-                    <button type="submit">CONTINUAR</button>
-                </form>
-                <p>O continúa con</p>
                 <div class="login_social">
-                    <button class="login_social_google">
-                        <a href="#"> <img src="https://login.decathlon.net/assets/google-CXYtgH5h.svg"></a>
-                    </button>
-                    <button class="login_social_facebook">
-                        <a href="#"> <img src="https://login.decathlon.net/assets/facebook-WuuN3sW7.svg"></a>
-                    </button>
-                    <button class="login_social_apple">
-                        <a href="#"> <img src="https://login.decathlon.net/assets/apple-BbTnnE8R.svg"></a>
-                    </button>
+                    <p>O continúa con</p>
+                    <div class="social">
+                        <button class="login_social_google">
+                            <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?response_type=code&client_id=156653362772-deuh8kiddet5ehf7ldmin8emkq5t61qf.apps.googleusercontent.com&scope=profile%20email&state=gahZyKkr0ADMZfa6gGVereoXoD2nHWKxEw4WC4Umre8%3D&redirect_uri=https%3A%2F%2Fapi-eu.decathlon.net%2Fconnect%2Flogin%2Foauth2%2Fcode%2Fsp1603sp&service=lso&o2v=2&flowName=GeneralOAuthFlow"> <img src="https://login.decathlon.net/assets/google-CXYtgH5h.svg" target="_blank"
+                                    rel="noopener noreferrer"></a>
+                        </button>
+                        <button class="login_social_facebook">
+                            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=399859614852902&kid_directed_site=0&app_id=399859614852902&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv6.0%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26client_id%3D399859614852902%26scope%3Dpublic_profile%2Bemail%26state%3De8NcMwGak3hRKW2eaWdP46hlLn1N9ey18vs7ik0Kzxw%253D%26redirect_uri%3Dhttps%253A%252F%252Fapi-eu.decathlon.net%252Fconnect%252Flogin%252Foauth2%252Fcode%252Fsp1509es%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dc1557f6f-02f0-4c29-8ee9-26ef71f9cce2%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fapi-eu.decathlon.net%2Fconnect%2Flogin%2Foauth2%2Fcode%2Fsp1509es%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3De8NcMwGak3hRKW2eaWdP46hlLn1N9ey18vs7ik0Kzxw%253D%23_%3D_&display=page&locale=es_ES&pl_dbl=0"> <img src="https://login.decathlon.net/assets/facebook-WuuN3sW7.svg" target="_blank"
+                                    rel="noopener noreferrer"></a>
+                        </button>
+                        <button class="login_social_apple">
+                            <a href="https://appleid.apple.com/auth/authorize?response_mode=form_post&response_type=code&client_id=decathlon.login&scope=openid%20name%20email&state=n_z--4dd4NZmp9xnzqoPbrT8oA5iOwUAHwgWdkT5ifk%3D&redirect_uri=https://api-eu.decathlon.net/connect/login/oauth2/code/es1603es&nonce=8HnYTXhZnWc1f_vhRz2YcLmxZohNhhOddnFCmenbE-8"> <img src="https://login.decathlon.net/assets/apple-BbTnnE8R.svg" target="_blank"
+                                    rel="noopener noreferrer"></a>
+                        </button>
+                    </div>
                 </div>
                 <div class="sesion">
                     <p>¿Aún no tienes cuenta Decalthon?</p>
@@ -74,9 +82,11 @@
                     </div>
                     <div class="login_footer">
                         <ul>
-                            <li><a href="#">Ayuda</a></li>
+                            <li><a href="https://login.decathlon.net/?client_id=40491109-1269-4b2f-8dd6-aae3977f8f4b&ui_locales=es_ES#/faq" target="_blank"
+                                    rel="noopener noreferrer">Ayuda</a></li>
                             <li><a href="https://www.decathlon.es/es/c/legal/politica-privacidad-como-utilizamos-tus-datos-personales-decathlon_b7db7b59-2c8d-4554-a4ab-7631a69cae6a"
-                                    target="_blank">Privacidad</a></li>
+                                    target="_blank"
+                                    rel="noopener noreferrer">Privacidad</a></li>
                         </ul>
 
                         <div class="language">
@@ -85,14 +95,14 @@
                             </div>
                             <div class="language_text">
                                 <p>Español (España)<i class="ri-arrow-down-s-line"></i></p>
-                                
+
                             </div>
                         </div>
                         <div class="footer">
                             <p>Esta web está protegida por reCaptcha
                                 <a href="https://      policies.google.com/privacy" target="_blank"
-                                    rel="noopener noreferrer">Política de Privacidad de Google
-                                </a> se aplica también como
+                                    rel="noopener noreferrer">Política de Privacidad de Google</a> se aplica también
+                                como
                                 <a href="https://policies.google.com/terms" target="_blank"
                                     rel="noopener noreferrer">Condiciones
                                     de uso</a>
